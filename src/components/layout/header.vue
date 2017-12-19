@@ -1,3 +1,4 @@
 <template>
-	<header class="header-navbar">header</header>
+  <header class="header-navbar">
+  </header>
 </template>

@@ -21,7 +21,9 @@ module.exports = {
         'space-before-function-paren': 'off',
         'no-new': 'off',
         'semi': 'off',
+        'eqeqeq': 'off',
         'no-tabs': 'off',
+        'comma-dangle': 'off',
         'no-mixed-spaces-and-tabs': 'off',
         // allow async-await
         'generator-star-spacing': 'off',

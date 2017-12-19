@@ -1,3 +1,4 @@
 <template>
-	 <footer class="page-footer">footer</footer>
+  <footer class="page-footer">
+  </footer>
 </template>

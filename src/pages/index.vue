@@ -2,8 +2,10 @@
   <div class="page-container">
     <v-nav></v-nav>
     <v-header></v-header>
-    <main class="main-container" :style="{ 'minHeight' : minHeight }">
-      <router-view></router-view>
+    <main class="main-container">
+      <div class="content" :style="{ 'minHeight' : minHeight }">
+        <router-view></router-view>
+      </div>
     </main>
     <v-footer></v-footer>
   </div>
@@ -21,7 +23,7 @@ export default {
   mounted() {},
   computed: {
     minHeight() {
-      return this.windowHeight - 100 + 60 + 'px';
+      return this.windowHeight - 140 + 'px';
     }
   }
 }
@@ -29,14 +31,5 @@ export default {
 </script>
 <style lang="scss">
 @import 'src/styles/common.scss';
-.fade-enter,
-.fade-leave-active {
-  opacity: 0;
-}
-
-.fade-enter-active,
-.fade-leave-active {
-  transition: all .2s ease;
-}
 
 </style>

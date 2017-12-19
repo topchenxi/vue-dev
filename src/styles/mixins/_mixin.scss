@@ -1,0 +1,123 @@
+// main color
+$green: #2fb468!default;
+
+// font color
+$c333: #333!default;
+$c666: #666!default;
+$c999: #999!default;
+
+// support color
+$red: #e63939!default;
+
+@mixin bis($url)
+{
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+@mixin allcover
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@mixin center
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+@mixin ct
+{
+    position: absolute;
+    top: 50%;
+
+    transform: translateY(-50%);
+}
+
+@mixin cl
+{
+    position: absolute;
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+@mixin fc
+{
+    display: flex !important;
+
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin size($width, $height: $width)
+{
+    width: $width;
+    height: $height;
+}
+
+@mixin font($size, $line-height, $family: 'Microsoft YaHei')
+{
+    font: #{$size}/#{$line-height} $family;
+}
+
+@mixin sc($size, $color)
+{
+    font-size: $size;
+
+    color: $color;
+}
+
+@mixin fj($type: space-between)
+{
+    display: flex;
+
+    justify-content: $type;
+}
+
+@mixin float($side: left)
+{
+    display: inline-block!important;
+    float: $side !important;
+    zoom: 1!important;
+}
+
+@mixin textAlign($side)
+{
+    text-align: $side!important;
+}
+
+@mixin verticalAlign($side)
+{
+    vertical-align: $side!important;
+}
+
+@mixin linkFoo($color, $bg-color, $hover-color)
+{
+    cursor: pointer;
+
+    color: $color;
+    background-color: $bg-color;
+    &:hover
+    {
+        color: $hover-color;
+    }
+}
+
+@mixin clearfix()
+{
+    &::after
+    {
+        display: block;
+        clear: both;
+
+        content: '';
+    }
+}
+
